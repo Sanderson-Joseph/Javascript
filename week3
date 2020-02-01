@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+// For Loop/variables
+
+var i;
+for (i = 0; i<11; i++)
+	{
+		document.write(i);
+        document.write(" ");
+	}
+
+document.write("<br><br>");
+
+// While Loop
+var j = 0;
+while (j < 10)
+	{
+        document.write(j);
+        document.write(" ");
+        j++;
+	}
+
+document.write("<br><br>");
+
+//conditional statements
+var jScript = prompt("On a scale of one to five how much do you like javascript");
+var c = prompt("On a scale of one to five how much do you like C++");
+jScript = parseInt(jScript);
+c = parseInt(c);
+	if (jScript == c)
+    {
+		document.write("You like java script and C++ the same which is at level " + c + ".");
+    }
+	else if (jScript<c)
+    {
+		document.write("Java script is a " + jScript + " which is less than C++ at " + c + ".");
+        thisFunction();
+    }
+	else
+    {
+		document.write("C++ is a " + c + " which is less than javascript at " + jScript + ".");
+    }
+   
+document.write("<br><br>");   
+
+//Function/parameters
+function thisFunction(sql, java)
+{
+	document.write("<br><br>");
+	document.write("Do you even want to be in this class")
+    document.write("<br>");
+    var sql = prompt("On a scale of one to five how much do you like SQL");
+    var java = prompt("On a scale of one to five how much do you like java");
+    document.write("SQL is at level " + sql + " java is at level " + java);
+}
+
+document.write("<br><br>"); 
+
+//Array
+document.write("Do you understand"); 
+var lessons = ["Variables", "Loops", "If statements", "Functions", "Arrays"];
+var list = "";
+var m;
+for (m = 0; m < lessons.length; m++) {
+  list += lessons[m] + document.write("<br>");
+  document.write(lessons[m]); 
+}
+
+</script>
+
+</body>
+</html>
